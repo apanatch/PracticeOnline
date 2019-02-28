@@ -1,0 +1,123 @@
+aysha.panatch@zone24-we:~$ git config --global user.name "apanatch"
+aysha.panatch@zone24-we:~$ git config --global user.name
+apanatch
+aysha.panatch@zone24-we:~$ cd /u/Downloads/GitPractice
+aysha.panatch@zone24-we:/u/Downloads/GitPractice$ git init
+Reinitialized existing Git repository in U:/Downloads/GitPractice/.git/
+aysha.panatch@zone24-we:/u/Downloads/GitPractice$ ls
+Hello.txt
+aysha.panatch@zone24-we:/u/Downloads/GitPractice$ git add Hello.txt
+aysha.panatch@zone24-we:/u/Downloads/GitPractice$ git commit
+On branch master
+nothing to commit, working tree clean
+aysha.panatch@zone24-we:/u/Downloads/GitPractice$ git add Hi.txt
+aysha.panatch@zone24-we:/u/Downloads/GitPractice$ git commit
+[master 0be25b7] Added file Hi.txt
+ Committer: apanatch <aysha.panatch@cs.ucalgary.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hi.txt
+aysha.panatch@zone24-we:/u/Downloads/GitPractice$ git add .
+aysha.panatch@zone24-we:/u/Downloads/GitPractice$ git commit -m "Testing"
+On branch master
+nothing to commit, working tree clean             cd /u/Downloads/
+ticeOnline.gitzone24-we:/u/Downloads$ git clone https://github.com/apanatch/Pract
+Cloning into 'PracticeOnline'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+aysha.panatch@zone24-we:/u/Downloads$ git checkout master
+Already on 'master'
+D       FCFS.c
+aysha.panatch@zone24-we:/u/Downloads$ git checkout -b master1
+Switched to a new branch 'master1'
+D       FCFS.c
+aysha.panatch@zone24-we:/u/Downloads$ git checkout -b master2
+Switched to a new branch 'master2'
+D       FCFS.c
+aysha.panatch@zone24-we:/u/Downloads$ git checkout -b master3
+Switched to a new branch 'master3'
+D       FCFS.c
+aysha.panatch@zone24-we:/u/Downloads$ git branch
+  master
+  master1
+  master2
+* master3
+aysha.panatch@zone24-we:/u/Downloads$ git branch -a
+  master
+  master1
+  master2
+* master3
+aysha.panatch@zone24-we:/u/Downloads$ git checkout master1
+Switched to branch 'master1'
+D       FCFS.c
+aysha.panatch@zone24-we:/u/Downloads$ git add master1.html.txt
+fatal: pathspec 'master1.html.txt' did not match any files
+aysha.panatch@zone24-we:/u/Downloads$ git add master1.html
+fatal: pathspec 'master1.html' did not match any files
+aysha.panatch@zone24-we:/u/Downloads$ cd /u/Downloadsgit add master1.html.txt
+>
+> bash: unexpected EOF while looking for matching `"'
+bash: syntax error: unexpected end of file
+1.html.txt"ch@zone24-we:/u/Downloads/PracticeOnline$ git commit -m "Added master
+[master 4d8f7e7] Added master1.html.txt
+ Committer: apanatch <aysha.panatch@cs.ucalgary.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 master1.html.txt
+gin master1ch@zone24-we:/u/Downloads/PracticeOnline$ git push --set-upstream ori
+error: src refspec master1 does not match any.
+error: failed to push some refs to 'https://github.com/apanatch/PracticeOnline.git'
+aysha.panatch@zone24-we:/u/Downloads/PracticeOnline$ git checkout master1
+error: pathspec 'master1' did not match any file(s) known to git
+aysha.panatch@zone24-we:/u/Downloads/PracticeOnline$ git checkout -b master1
+Switched to a new branch 'master1'
+aysha.panatch@zone24-we:/u/Downloads/PracticeOnline$ git add master1.html.txt  "
+git: 'commmit' is not a git command. See 'git --help'.it checkout master1
+Already on 'master1'
+aysha.panatch@zone24-we:/u/Downloads/PracticeOnline$ git add master1.html.txt                                                                aysha.panatch@zone24-we:/u/Downloads/PracticeOnline$ git commit -m "Add file"
+On branch master1
+nothing to commit, working tree clean                                          i
+fatal: 'ori' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+gin master1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 37.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'master1' on GitHub by visiting:
+remote:      https://github.com/apanatch/PracticeOnline/pull/new/master1
+remote:
+To https://github.com/apanatch/PracticeOnline.git
+ * [new branch]      master1 -> master1
+Branch 'master1' set up to track remote branch 'master1' from 'origin'.
+aysha.panatch@zone24-we:/u/Downloads/PracticeOnline$
